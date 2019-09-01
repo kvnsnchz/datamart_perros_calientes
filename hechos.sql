@@ -45,5 +45,5 @@ CREATE TABLE `hechos_ingredientes_eliminados` (
 ALTER TABLE `hechos_ingredientes_eliminados` ADD CONSTRAINT `hechos_ingredientes_eliminados_fecha_fk` FOREIGN KEY (`fecha_id`) REFERENCES `dimension_fechas`(`id`) ON DELETE CASCADE;
 ALTER TABLE `hechos_ingredientes_eliminados` ADD CONSTRAINT `hechos_ingredientes_eliminados_sucursal_fk` FOREIGN KEY (`perro_id`) REFERENCES `dimension_perros`(`id`) ON DELETE CASCADE;
 ALTER TABLE `hechos_ingredientes_eliminados` ADD CONSTRAINT `hechos_ingredientes_eliminados_cliente_fk` FOREIGN KEY (`sucursal_id`) REFERENCES `dimension_sucursales`(`id`) ON DELETE CASCADE;
-ALTER TABLE `hechos_ingredientes_eliminados` ADD CONSTRAINT `hechos_ingredientes_eliminados_perro_fk` FOREIGN KEY (`cliente_id`) REFERENCES `dimension_usuarios`(`id`) ON DELETE CASCADE;
+ALTER TABLE `hechos_ingredientes_eliminados` ADD CONSTRAINT `hechos_ingredientes_eliminados_perro_fk` FOREIGN KEY (`cliente_id`) REFERENCES `dimension_clientes`(`id`) ON DELETE CASCADE;
 
