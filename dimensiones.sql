@@ -16,16 +16,12 @@ CREATE TABLE `dimension_sucursales` (
 	PRIMARY KEY (`id`)
 );
 
-call cargar_sucursales();
-
 DROP TABLE IF EXISTS `dimension_perros`;
 CREATE TABLE `dimension_perros` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`nombre` varchar(255) NOT NULL,
 	PRIMARY KEY (`id`)
 );
-
-call cargar_perros();
 
 DROP TABLE IF EXISTS `dimension_bebidas`;
 CREATE TABLE `dimension_bebidas` (
@@ -34,13 +30,9 @@ CREATE TABLE `dimension_bebidas` (
 	PRIMARY KEY (`id`)
 );
 
-call cargar_bebidas();
-
 DROP TABLE IF EXISTS `dimension_clientes`;
 CREATE TABLE `dimension_clientes` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`nombre` varchar(255) NOT NULL,
 	PRIMARY KEY (`id`)
 );
-
-call cargar_clientes();
