@@ -1,0 +1,1 @@
+call cargar_inicial_hechos();
