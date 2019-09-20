@@ -1,3 +1,5 @@
+delimiter //
+
 CREATE DEFINER=`root`@`localhost` FUNCTION `get_fecha_id`(fecha VARCHAR(20)) RETURNS int(11)
 BEGIN
 	DECLARE ret_value INTEGER;
@@ -30,4 +32,6 @@ BEGIN
 	SET id = concat( year(fecha), concat(mes, dia) );
     
 RETURN concat(id, segmento);
-END
+END //
+
+delimiter ;

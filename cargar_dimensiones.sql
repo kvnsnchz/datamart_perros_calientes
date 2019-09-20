@@ -1,3 +1,5 @@
+call cargar_fechas();
+
 call cargar_sucursales();
 
 call cargar_perros();
